@@ -1,7 +1,6 @@
-# ydes-cyber.github.io
-ydes-cyber.github.io/portfolio
-## Univeristy of Michigan Undergrad 
-Data Science and Robotics 
+# Yanira's Portfolio
+Univeristy of Michigan Undergrad Student
+Major: Undecided (Data Science and Robotics) 
 ### Projects 
 Flights Predictor
 
