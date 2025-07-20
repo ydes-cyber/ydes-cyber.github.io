@@ -1,0 +1,118 @@
+{
+  "devices": {
+    "light_001": {
+      "name": "Living Room Light",
+      "type": "light",
+      "properties": {
+        "brightness": 75,
+        "color": "#FFD700"
+      }
+    },
+    "light_002": {
+      "name": "Bedroom Light",
+      "type": "light",
+      "properties": {
+        "brightness": 100,
+        "color": "#FFFFFF"
+      }
+    },
+    "thermo_001": {
+      "name": "Main Thermostat",
+      "type": "thermostat",
+      "properties": {
+        "target_temperature": 24,
+        "current_temperature": 20,
+        "mode": "heat"
+      }
+    },
+    "sensor_001": {
+      "name": "Living Room Motion",
+      "type": "sensor_motion",
+      "properties": {
+        "sensor_type": "motion",
+        "value": 0,
+        "unit": "detected"
+      }
+    },
+    "sensor_002": {
+      "name": "Outdoor Temperature",
+      "type": "sensor_temperature",
+      "properties": {
+        "sensor_type": "temperature",
+        "value": 25.3,
+        "unit": "\u00b0C"
+      }
+    },
+    "sensor_003": {
+      "name": "Front Door",
+      "type": "sensor_door",
+      "properties": {
+        "sensor_type": "door",
+        "value": 0,
+        "unit": "open/closed"
+      }
+    },
+    "light_003": {
+      "name": "Kitchen Light",
+      "type": "light",
+      "properties": {
+        "brightness": 50,
+        "color": "#FFFFFF"
+      }
+    }
+  },
+  "automation_rules": {
+    "rule_001": {
+      "name": "Motion Activated Lighting",
+      "condition": {
+        "type": "sensor_threshold",
+        "device_id": "sensor_001",
+        "threshold": 0,
+        "operator": ">"
+      },
+      "action": {
+        "type": "turn_on",
+        "device_id": "light_001"
+      },
+      "is_active": true
+    },
+    "rule_002": {
+      "name": "Evening Lighting",
+      "condition": {
+        "type": "time",
+        "time": "18:00"
+      },
+      "action": {
+        "type": "turn_on",
+        "device_id": "light_001"
+      },
+      "is_active": true
+    },
+    "rule_003": {
+      "name": "Night Energy Saving",
+      "condition": {
+        "type": "time",
+        "time": "23:00"
+      },
+      "action": {
+        "type": "turn_off",
+        "device_id": "light_001"
+      },
+      "is_active": true
+    },
+    "rule_004": {
+      "name": "Kitchen Light Auto-Off",
+      "condition": {
+        "type": "sensor_threshold",
+        "device_id": "sensor_002",
+        "threshold": 28,
+        "operator": ">"
+      },
+      "action": {
+        "type": "turn_off",
+        "device_id": "light_003"
+      },
+      "is_active": true
+    }
+  }
+}
