@@ -7,7 +7,6 @@ This script implements a machine learning-based hate speech detection system tha
 ## Financial Predictor
 
 This project comprises a series of scripts intended to replicate and evaluate stock market order book data for the purpose of strategy creation.It downloads  market data from Kaggle and processes it through four interconnected components: a data loader that cleanses and organizes order book information while handling errors, a backtesting engine that analyzes buying versus selling pressure at market snapshots to generate trading signals (GO LONG, GO SHORT, or NEUTRAL), a feature extraction module that calculates key market indicators like bid-ask spreads, VWAP, order book imbalance and depth, and an order matching system that simulates trade execution by prioritizing orders and matching them when bid prices meet or exceed ask prices using heap-based algorithms.
-    
 [Orderbook Friction Strategy Repository](https://github.com/ydes-cyber/orderbook-friction-strategy)
 
 ## Project: Linear Regression: From First Principles to Practical Application
