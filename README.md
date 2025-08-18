@@ -37,7 +37,7 @@ Machine Learning Therapist
       Calculates the overall total buying and selling pressure.
       Gives an overall trading recommendation based on the total pressure in the form of  (GO LONG, GO SHORT, NEUTRAL) 
 
-**features:** The script aids in the analysis of market behavior as well as extracts important indicators from stock market order book data. It calculates:
+**features:** This script aids in the analysis of market behavior as well as extracts important indicators from stock market order book data. It calculates:
     - Bid-ask spread – difference between highest buy and lowest sell prices
     
     - Total quantities – total buy and sell order sizes
