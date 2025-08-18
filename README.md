@@ -10,6 +10,16 @@ This project comprises a series of scripts intended to replicate and evaluate st
     
 [Orderbook Friction Strategy Repository](https://github.com/ydes-cyber/orderbook-friction-strategy)
 
+## Project: Linear Regression: From First Principles to Practical Application
+
+This project demonstrates a thorough understanding of linear regression by implementing it in two ways. First, a manual model is built from scratch using numpy to solve the least squares problem, providing deep insight into the algorithm's core mechanics. Second, the same problem is solved using the industry-standard scikit-learn library. This dual approach showcases both a strong theoretical foundation in machine learning and practical proficiency with essential data science tools.
+[Linear Regression Practice](https://github.com/ydes-cyber/Linear_Regression_Practice.git)
+
+## Classification Practice 
+
+This project uses machine learning to predict the initial spread index (ISI) of forest fires in Algeria based on environmental and weather-related features. By analyzing conditions such as temperature, humidity, wind speed, and fire weather indices, the model identifies the most influential factors affecting forest fire intensity.
+[Classification Practice:Forest Fires](https://github.com/ydes-cyber/Classification-Practice.git)
+
 ## Stroke Predictor 
 This project demonstrates a complete end-to-end machine learning pipeline for stroke prediction. It covers data preprocessing, categorical encoding, balancing, training, evaluation, and visualization. The final model effectively predicts stroke cases with very high accuracy and highlights the most influential health and demographic factors. This approach can serve as a foundation for developing predictive healthcare tools and early intervention systems.
 [Stroke Prediction Model using Machine Learning](https://github.com/ydes-cyber/Stroke-Predictor.git)
