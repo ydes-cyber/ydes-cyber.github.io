@@ -11,11 +11,11 @@
 
                 - Downloads the Nifty50 stock market dataset from kaggle 
                 
-                - Reads CSV files and extracts important information from every order, like whether       it’s a buy or sell, and $ price or quantity.
+                - Reads CSV files and extracts important information from every order, like whether it’s a buy or sell, and $ price or quantity.
                 
-                - It handles errors, ex: missing files, incorrect data. This keeps the code from           crashing 
+                - It handles errors, ex: missing files, incorrect data. This keeps the code from crashing 
                 
-                - Outputs a clean list of orders that can be used in other parts of the project, like      feature generation and backtesting.
+                - Outputs a clean list of orders that can be used in other parts of the project, like feature generation and backtesting.
 
 **Backtest:** This script makes an elementary trading approach utilizing snapshots of stock market orders. It's goal being to anaylzing the buying and selling pressure of at different points in                   time and make a decision for each of the snapshots
 
