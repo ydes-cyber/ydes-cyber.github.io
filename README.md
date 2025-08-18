@@ -8,3 +8,5 @@ Flights Predictor
 Machine Learning Therapist 
 
 Financial Predictor 
+https://github.com/ydes-cyber/orderbook-friction-strategy.git
+order 
