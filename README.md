@@ -1,14 +1,11 @@
-# Yanira's Portfolio
-Univeristy of Michigan Undergrad Student
+# Projects
+## Flight Predictor 
 
-Major: Undecided - Data Science and Robotics 
-### Projects 
-Flights Predictor
 
-Machine Learning Therapist 
+## Machine Learning Therapist 
 
-###Financial Predictor
 
+## Financial Predictor
 
 **data_loader:** This script is design to load and organize stock market data so it can be anaylzed and used for back testing strategies.
 
@@ -57,6 +54,7 @@ Machine Learning Therapist
     - Orders are automatically removed once fully executed
     
     - Uses Python heaps to efficiently manage and match orders based on priority
+    
+[Orderbook Friction Strategy Repository](https://github.com/ydes-cyber/orderbook-friction-strategy)
 
-https://github.com/ydes-cyber/orderbook-friction-strategy.git
 
