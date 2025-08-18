@@ -11,6 +11,8 @@ This project comprises a series of scripts intended to replicate and evaluate st
 [Orderbook Friction Strategy Repository](https://github.com/ydes-cyber/orderbook-friction-strategy)
 
 ## Stroke Predictor 
+This project demonstrates a complete end-to-end machine learning pipeline for stroke prediction. It covers data preprocessing, categorical encoding, balancing, training, evaluation, and visualization. The final model effectively predicts stroke cases with very high accuracy and highlights the most influential health and demographic factors. This approach can serve as a foundation for developing predictive healthcare tools and early intervention systems.
+[Stroke Prediction Model using Machine Learning](https://github.com/ydes-cyber/Stroke-Predictor.git)
 
 ## Flight Predictor 
 Applied KMeans clustering to ~2,800 product sales records using features like quantity ordered, price each, and total sales. Preprocessed the data with scaling, used the Elbow Method to select the number of clusters, and identified five distinct purchasing patterns. Extracted and interpreted cluster centroids to uncover insights such as bulk low-cost orders versus high-value purchases. Tools: pandas, scikit-learn, matplotlib, Yellowbrick.
