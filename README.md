@@ -1,61 +1,18 @@
 # Projects
-## Flight Predictor 
-
 
 ## Machine Learning Therapist 
-
+This script implements a machine learning-based hate speech detection system that loads JSON data containing text messages and their severity classifications, then automatically trains and compares multiple classifiers (XGBoost, SVM, and Logistic Regression) to identify the best-performing model for categorizing messages into four severity levels (Safe, Medium, High, Extreme) with corresponding actions (allow, flag, review, block). The system uses TF-IDF vectorization with n-grams for feature extraction, includes a keyword-based severity boosting mechanism for extreme terms, balances training data to prevent bias, and provides confidence scores and recommended moderation actions for each analyzed message, making it suitable for automated content moderation applications.
+[therapy-ai](https://github.com/ydes-cyber/therapy-ai.git)
 
 ## Financial Predictor
 
-**Data_loader:** This script is design to load and organize stock market data so it can be anaylzed and used for back testing strategies.
-
- - Downloads the Nifty50 stock market dataset from kaggle 
-  
-  - Reads CSV files and extracts important information from every order, like whether it’s a buy or sell, and $ price or quantity.
-                
-  - It handles errors, ex: missing files, incorrect data. This keeps the code from crashing 
-
-  - Outputs a clean list of orders that can be used in other parts of the project, like feature generation and backtesting.
-
-**Backtest:** This script makes an elementary trading approach utilizing snapshots of stock market orders. It's goal being to anaylzing the buying and selling pressure of at different points in time and make a decision for each of the snapshots
-
-- Each snapshot contains a list of bids (buy orders) and asks (sell orders).The script cleans the orders to make sure each one has a valid price and    quantity.
-  
- - Then it calculates total buying and selling pressure by:
-     Adding up the quantities of all buy and sell orders in each snapshot.
-                
-- Makes decisions per snapshot:
-    If total buying pressure is greater than selling, it outputs GO LONG.
-    If selling pressure is greater, it outputs GO SHORT.
-    If buying and selling are equal, it outputs NEUTRAL.
-                
-   - Backtests the entire series:
-      Loops through all snapshots, printing the decision, total buying, and total selling for each.
-      Calculates the overall total buying and selling pressure.
-      Gives an overall trading recommendation based on the total pressure in the form of  (GO LONG, GO SHORT, NEUTRAL) 
-
-**Features:** This script aids in the analysis of market behavior as well as extracts important indicators from stock market order book data. It calculates:
-
- - Bid_ask spread | differences between highest buy and lowest sell prices|
-              
- - Total_quanties | total buy and sell order sizes|
-
- - VWAP(Volume Weighted Average price | average price weighted by order size|
-              
- - Order_book_imbalance | shows whether buying or selling pressure is greater|
-              
- - Order_book_depth | liquidity near the top of the order book|
-       
-**Model.py:** This scriptkeeps track of buy and sell orders and matches them when the prices overlap: 
-
-   - Buy orders are prioritized by the highest price, while sell orders are prioritized by the lowest price 
-
-  - When the highest buy price meets or exceeds the lowest sell price a trade occurs at the average price 
-
-  - Orders are automatically removed once fully executed 
-
-              - Uses heaps to manage and match orders based on priority 
+This project comprises a series of scripts intended to replicate and evaluate stock market order book data for the purpose of strategy creation.It downloads  market data from Kaggle and processes it through four interconnected components: a data loader that cleanses and organizes order book information while handling errors, a backtesting engine that analyzes buying versus selling pressure at market snapshots to generate trading signals (GO LONG, GO SHORT, or NEUTRAL), a feature extraction module that calculates key market indicators like bid-ask spreads, VWAP, order book imbalance and depth, and an order matching system that simulates trade execution by prioritizing orders and matching them when bid prices meet or exceed ask prices using heap-based algorithms.
     
 [Orderbook Friction Strategy Repository](https://github.com/ydes-cyber/orderbook-friction-strategy)
 
+## Stroke Predictor 
 
+## Flight Predictor 
+Applied KMeans clustering to ~2,800 product sales records using features like quantity ordered, price each, and total sales. Preprocessed the data with scaling, used the Elbow Method to select the number of clusters, and identified five distinct purchasing patterns. Extracted and interpreted cluster centroids to uncover insights such as bulk low-cost orders versus high-value purchases. Tools: pandas, scikit-learn, matplotlib, Yellowbrick.
+
+[Flight Predictor](https://github.com/ydes-cyber/flight_predictor.git)
