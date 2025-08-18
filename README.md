@@ -39,16 +39,24 @@ Machine Learning Therapist
 
 **features:** The script aids in the analysis of market behavior as well as extracts important indicators from stock market order book data. It calculates:
     - Bid-ask spread – difference between highest buy and lowest sell prices
-    - Total quantities – total buy and sell order sizes.
-    - VWAP (Volume Weighted Average Price) – average price weighted by order size.
-    - Order book imbalance – shows whether buying or selling pressure dominates. 
-    - Order book depth – liquidity near the top of the order book.
     
-**model.py:** This scriptkeeps track of buy and sell orders and matches them when the prices overlap.
-    - Buy orders are prioritized by the highest price, while sell orders are prioritized by the lowest price.
-    - When the highest buy price meets or exceeds the lowest sell price, a trade occurs at the average price.
-    - Orders are automatically removed once fully executed.
-    - Uses Python heaps to efficiently manage and match orders based on priority.
+    - Total quantities – total buy and sell order sizes
+    
+    - VWAP (Volume Weighted Average Price) – average price weighted by order size
+    
+    - Order book imbalance – shows whether buying or selling pressure dominates
+    
+    - Order book depth – liquidity near the top of the order book
+    
+**model.py:** This scriptkeeps track of buy and sell orders and matches them when the prices overlap: 
+
+    - Buy orders are prioritized by the highest price, while sell orders are prioritized by the lowest price
+    
+    - When the highest buy price meets or exceeds the lowest sell price, a trade occurs at the average price
+    
+    - Orders are automatically removed once fully executed
+    
+    - Uses Python heaps to efficiently manage and match orders based on priority
 
 https://github.com/ydes-cyber/orderbook-friction-strategy.git
 
