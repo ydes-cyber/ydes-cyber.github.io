@@ -1,5 +1,6 @@
 # Extracirrculars and Clubs 
 MICHIGAN DATA SCIENCE (MDST)                                                                                                                     **University of Michigan- Ann Arbor  **
+
 **Member**                                                                                                                                                  ** February 2025- Present **       
 - Developed a flight price prediction model using machine learning techniques with pandas, scikit-learn, and Streamlit.  
 - Built an interactive web app for real-time airfare predictions.  
