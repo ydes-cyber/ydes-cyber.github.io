@@ -1,4 +1,4 @@
-# Extracirrculars and Clubs 
+# extracurricular and Clubs 
 MICHIGAN DATA SCIENCE (MDST) [**February 2025- Present**]                                                                                                                     
 University of Michigan- Ann Arbor
 **Member**  
