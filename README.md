@@ -9,7 +9,7 @@ University of Michigan- Ann Arbor
 
 # Projects
 
-## Machine Learning Therapist 
+## Machine Learning Therapist[Experimental Prototype]
 This script implements a machine learning-based hate speech detection system that loads JSON data containing text messages and their severity classifications, then automatically trains and compares multiple classifiers (XGBoost, SVM, and Logistic Regression) to identify the best-performing model for categorizing messages into four severity levels (Safe, Medium, High, Extreme) with corresponding actions (allow, flag, review, block). The system uses TF-IDF vectorization with n-grams for feature extraction, includes a keyword-based severity boosting mechanism for extreme terms, balances training data to prevent bias, and provides confidence scores and recommended moderation actions for each analyzed message, making it suitable for automated content moderation applications.
 [therapy-ai](https://github.com/ydes-cyber/therapy-ai.git)
 
