@@ -9,9 +9,10 @@ University of Michigan- Ann Arbor
 
 # Projects
 
-## THE VEIL
+## The Veil
 This project implements a plug-and-play system that replaces static NPC scripts with evolving personalities for game engines. It combines generative AI (Gemini LLM) for reasoning and dialogue, traditional ML for sentiment analysis, and Python state management for memory and moral drift. NPCs operate through a structured cycle of [ANALYSIS], [ACTION], and [DIALOGUE], allowing them to scheme, adapt, and evolve based on player choices. The result is autonomous, game-ready characters capable of dynamic moral shifts, unsupervised decision-making, and scalable integration into faction-driven political landscapes.
 [DNA](https://github.com/ydes-cyber/The-Veil-/tree/main) 
+[The Veil](file:///C:/Users/Yanir/Downloads/THE%20VEIL%20(1).pdf)
 
 ## Machine Learning Therapist [Experimental Prototype]
 This script implements a machine learning-based hate speech detection system that loads JSON data containing text messages and their severity classifications, then automatically trains and compares multiple classifiers (XGBoost, SVM, and Logistic Regression) to identify the best-performing model for categorizing messages into four severity levels (Safe, Medium, High, Extreme) with corresponding actions (allow, flag, review, block). The system uses TF-IDF vectorization with n-grams for feature extraction, includes a keyword-based severity boosting mechanism for extreme terms, balances training data to prevent bias, and provides confidence scores and recommended moderation actions for each analyzed message, making it suitable for automated content moderation applications.
