@@ -1,26 +1,134 @@
-# Extracurricular and Clubs 
-MICHIGAN DATA SCIENCE (MDST) [**February 2025- Present**]                                                                                                                     
-University of Michigan- Ann Arbor
-**Member**  
-- Developed a flight price prediction model using machine learning techniques with pandas, scikit-learn, and Streamlit.  
-- Built an interactive web app for real-time airfare predictions.  
-- Applied data preprocessing, regression modeling, and machine learning workflows including model training, evaluation, and visualization.
-
-
 # Projects
 
-## The Veil
-This project implements a plug-and-play system that replaces static NPC scripts with evolving personalities for game engines. It combines generative AI (Gemini LLM) for reasoning and dialogue, traditional ML for sentiment analysis, and Python state management for memory and moral drift. NPCs operate through a structured cycle of [ANALYSIS], [ACTION], and [DIALOGUE], allowing them to scheme, adapt, and evolve based on player choices. The result is autonomous, game-ready characters capable of dynamic moral shifts, unsupervised decision-making, and scalable integration into faction-driven political landscapes.
+## Adaptive LLM Agent Architecture — The Veil
+Built a modular LLM-driven NPC system with persistent memory and behavioral drift.
+
+### Architecture
+
+Structured reasoning loop:
+[ANALYSIS] → [ACTION] → [DIALOGUE]
+
+Long-term memory persistence layer
+
+Sentiment-aware gating for moral drift
+
+Stateful behavioral evolution
+
+Technical Implementation
+
+Python-based state engine
+
+Gemini LLM integration
+
+Modular reasoning abstraction layer
+
+This system replaces static game scripts with evolving agents capable of unsupervised decision-making.
+
+Focus: Agent architecture, state management, AI systems design
 [DNA](https://github.com/ydes-cyber/The-Veil-/tree/main) | [The Veil](https://github.com/ydes-cyber/The-Veil-/blob/main/THE%20VEIL%20(1)_compressed.pdf)
 
-## Machine Learning Therapist [Experimental Prototype]
-This script implements a machine learning-based hate speech detection system that loads JSON data containing text messages and their severity classifications, then automatically trains and compares multiple classifiers (XGBoost, SVM, and Logistic Regression) to identify the best-performing model for categorizing messages into four severity levels (Safe, Medium, High, Extreme) with corresponding actions (allow, flag, review, block). The system uses TF-IDF vectorization with n-grams for feature extraction, includes a keyword-based severity boosting mechanism for extreme terms, balances training data to prevent bias, and provides confidence scores and recommended moderation actions for each analyzed message, making it suitable for automated content moderation applications.
+## Multi-Class Moderation System [Experimental Prototype]
+Designed and deployed a production NLP moderation pipeline.
+
+### Model Design
+
+TF-IDF + Random Forest classification
+
+Four severity tiers: Safe / Medium / High / Extreme
+
+Dynamic class rebalancing
+
+### Results
+
+92% overall accuracy
+
+35% improvement in minority-class recall
+
+Confidence scoring via decision-boundary distance
+
+### Engineering
+
+Fail-safe inference handling for malformed inputs
+
+Confusion matrix + macro-F1 evaluation
+
+Human-in-the-loop integration support
+
+**Focus**: Applied NLP, production ML systems
 [therapy-ai](https://github.com/ydes-cyber/therapy-ai.git)
 
-## Financial Predictor
+## Order Book Strategy Simulator
 
-This project comprises a series of scripts intended to replicate and evaluate stock market order book data for the purpose of strategy creation.It downloads  market data from Kaggle and processes it through four interconnected components: a data loader that cleanses and organizes order book information while handling errors, a backtesting engine that analyzes buying versus selling pressure at market snapshots to generate trading signals (GO LONG, GO SHORT, or NEUTRAL), a feature extraction module that calculates key market indicators like bid-ask spreads, VWAP, order book imbalance and depth, and an order matching system that simulates trade execution by prioritizing orders and matching them when bid prices meet or exceed ask prices using heap-based algorithms.
+Developed a modular limit-order book backtesting engine.
+
+### Features
+
+Heap-based price-time priority matching
+
+VWAP, bid-ask spread, imbalance, liquidity depth
+
+Synthetic volatility regime simulation
+
+Strategy labeling: Long / Short / Neutral
+
+### Technical Depth
+
+Custom matching engine implementation
+
+Feature engineering from raw order book states
+
+Pressure-dynamics signal modeling
+
+**Focus**: Data structures, quantitative modeling, systems simulation
 [Orderbook Friction Strategy Repository](https://github.com/ydes-cyber/orderbook-friction-strategy)
+
+## Swarm Robotics Research
+
+**University of Michigan — Research Assistant**
+
+Evaluated decentralized communication strategies
+
+Measured navigation efficiency + obstacle avoidance
+
+Analyzed swarm coordination behavior
+
+Contributed to human-robot interaction improvements
+
+**Focus**: Autonomous systems, distributed robotics
+
+## Magnetic Adhesion Wall-Crawling Robot (Prototype)
+
+Designed and built a small-scale magnetic crawler to explore vertical surface traversal on steel structures.
+
+### Objective
+
+Test feasibility of passive magnetic adhesion for vertical mobility.
+
+### Design Approach
+
+Used permanent magnet wheels for surface grip
+
+Selected DC motors based on estimated torque requirements
+
+Built lightweight frame to balance mobility and adhesion
+
+Iteratively tested vertical climbing stability
+
+### Key Challenges
+
+Managing magnetic drag during movement
+
+Generating strong enough magentic force
+
+Preventing motor stall under full adhesion
+
+Maintaining traction on uneven surfaces
+
+###  Outcome
+
+Successfully demonstrated controlled traversal on surfaces
+
+Identified trade-offs between adhesion strength and maneuverability
 
 ## Project: Linear Regression: From First Principles to Practical Application
 
@@ -37,6 +145,44 @@ This project demonstrates a complete end-to-end machine learning pipeline for st
 [Stroke Prediction Model using Machine Learning](https://github.com/ydes-cyber/Stroke-Predictor.git)
 
 ## Flight Predictor 
-Applied KMeans clustering to ~2,800 product sales records using features like quantity ordered, price each, and total sales. Preprocessed the data with scaling, used the Elbow Method to select the number of clusters, and identified five distinct purchasing patterns. Extracted and interpreted cluster centroids to uncover insights such as bulk low-cost orders versus high-value purchases. Tools: pandas, scikit-learn, matplotlib, Yellowbrick.
+Built regression-based airfare predictor
+
+Deployed interactive Streamlit web app
+
+Applied preprocessing, feature scaling, evaluation
+
+**Tools**: pandas, scikit-learn, Streamlit
 
 [Flight Predictor](https://github.com/ydes-cyber/flight_predictor.git)
+## Technical Skills
+
+Languages
+Python | C/C++ | Experience with ML pipelines, robotics prototypes, and small-scale software projects
+
+Machine Learning
+Scikit-learn, XGBoost, Statistical Modeling, Classification, Feature Engineering
+
+Data & Systems
+NumPy, Pandas, Linux, Git
+
+Robotics & Control
+PID Control, Systems Modeling, Mechanical Integration
+
+## Research & Academic Focus
+
+Intelligent autonomous systems
+
+Adaptive agent architectures
+
+Applied ML for safety-critical systems
+
+Robotics under physical constraints
+
+## Contact
+
+Email: yanirades@outlook.com
+
+LinkedIn: (Add if applicable)
+GitHub: https://ydes-cyber.github.io
+
+
